@@ -1,0 +1,50 @@
+@import "swiper/swiper";
+
+.hero-slider{
+  .swiper-slide{
+    min-height: 580px;
+    padding-top: 225px;
+    padding-bottom: 89px;
+  }
+  &__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 90%;
+    letter-spacing: -0.35px;
+    color: #FFFFFF;
+  }
+  &__description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+  .swiper-pagination{
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+    &-wrapper{
+      position: relative;
+    }
+    &-bullet{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #FFFFFF;
+      opacity: 0.3;
+      border-radius: 10px;
+      margin-right: 3px;
+      transition: 300ms opacity;
+      &-active{
+        opacity: 1;
+      }
+    }
+  }
+}

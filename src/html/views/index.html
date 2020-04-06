@@ -1,0 +1,78 @@
+
+<% var data = {
+title: "Compliance - Главная",
+author: "Nadsadin",
+navbar_bg: "bg-transparent navbar-dark navbar-landing"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Slider -->
+
+<div class="swiper-container hero-slider" id="swiper-with-pagination">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url('img/slider.png')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="hero-slider__title">Комплаенс в малом бизнесе</div>
+            <div class="hero-slider__description">Программа разработана совместно с гильдией изготовителей
+              хлебобулочной продукции МТПП.</div>
+            <a href="#" class="btn btn-outline-white">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('img/slider.png')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="hero-slider__title">Комплаенс в малом бизнесе</div>
+            <div class="hero-slider__description">Программа разработана совместно с гильдией изготовителей
+              хлебобулочной продукции МТПП.</div>
+            <a href="#" class="btn btn-outline-white">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="swiper-pagination-wrapper">
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<!-- / Slider -->
+<div id="about" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-header">
+          <div class="section-title">О нас</div>
+          <div class="section-subtitle">Узнайте больше о деятельности Комитета.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6"><p>Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную
+        роль в формировании существенных финансовых и административных условий. С другой стороны укрепление и развитие
+        структуры обеспечивает участие в формировании систем массового участия. Разнообразный и богатый опыт
+        консультация с широким активом обеспечивает широкому кругу получение знаний.</p>
+      </div>
+      <div class="col-lg-6"><p>Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Не следует, забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития.</p>
+        <a href="#" class="link-more">Узнать больше</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="person">
+          <img src="img/avatar.png" alt="" class="person-img">
+          <div class="person-text">
+            <div class="person-name">Ильсур Мансурович Ахметшин</div>
+            <div class="person-position">Председатель Комитета МТПП по комплаенс и деловой этике.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
